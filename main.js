@@ -112,11 +112,20 @@ function resetGame() {
     mistakeTag.innerText = 0;
     cpmTag.innerText = 0;
 }
+// Function to generate a random gradient
+function generateRandomGradient() {
+    const colors = ['#696969', '#4f4f4f', '#333333', '#252525', '#141414', '#033933', '#024c42', '#017365', '#1e776d', '#006466', '#065a60', '#0b525b', '#023b3f', '#034748', '#144552'];
+    let randomColor1 = colors[Math.floor(Math.random() * colors.length)];
+    let randomColor2 = colors[Math.floor(Math.random() * colors.length)];
+    return `linear-gradient(45deg, ${randomColor1}, ${randomColor2})`;
+}
+
+// Generate a new gradient every time the page reloads
+const newGradient = generateRandomGradient();
+
+// Apply the newly generated gradient to the body
+document.body.style.background = newGradient;
 
 loadParagraph();
 inpField.addEventListener("input", initTyping);
 tryAgainBtn.addEventListener("click", resetGame);
-
-
-
-
