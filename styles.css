@@ -226,6 +226,44 @@ li:not(:first-child) span {
     font-weight: 500;
 }
 
+.footer {
+    position: fixed;
+    bottom: 10px;
+    right: 78px;
+    color: #bfbfbf;
+    font-size: 16px;
+    margin-top: 20px;
+    border-radius: 0 0 15px 15px;
+}
+.footer a{
+    color: #bfbfbf;
+    text-decoration: none;
+}
+.footer a:hover{
+    color: black;
+}
+
+.footer p {
+    margin: 0;
+    font-weight: 500;
+}
+
+.footer .linktree {
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    text-decoration: none;
+    color: #bfbfbf;
+    font-size: 15px;
+    font-weight: bold;
+    background: none;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.linktree:hover {
+    color: black;
+}
+
 @media (max-width: 745px) {
     .wrapper {
         padding: 20px;
