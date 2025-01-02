@@ -28,7 +28,13 @@ body {
     border-radius: 15px;
     box-shadow: 0 15px 20px rgba(0, 0, 0, 0.1);
 }
-
+.wrapper h1{
+    color: #007acc;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+}
 .content-box {
     padding: 30px 35px;
     border-radius: 15px;
@@ -132,9 +138,6 @@ body {
     border-radius: 4px;
 }
 
-/* .typing-text p span.active {
-    color: #17A2B8;
-} */
 .typing-text p span.active::before {
     position: absolute;
     content: "";
@@ -230,16 +233,17 @@ li:not(:first-child) span {
     position: fixed;
     bottom: 10px;
     right: 78px;
-    color: #bfbfbf;
+    color: #828282;
     font-size: 16px;
     margin-top: 20px;
     border-radius: 0 0 15px 15px;
 }
-.footer a{
-    color: #bfbfbf;
+.footer a {
+    color: #828282;
     text-decoration: none;
 }
-.footer a:hover{
+
+.footer a:hover {
     color: black;
 }
 
@@ -253,7 +257,7 @@ li:not(:first-child) span {
     bottom: 10px;
     right: 20px;
     text-decoration: none;
-    color: #bfbfbf;
+    color: #828282;
     font-size: 15px;
     font-weight: bold;
     background: none;
@@ -324,7 +328,8 @@ li:not(:first-child) span {
 
 @media (max-width: 1200px) {
     .wrapper {
-        width: 90%; /* Adjust width for medium-sized screens */
+        width: 90%;
+        /* Adjust width for medium-sized screens */
         padding: 40px;
     }
 
@@ -341,7 +346,8 @@ li:not(:first-child) span {
 
     .content-box {
         padding: 20px 25px;
-        max-height: 500px; /* Reduce height for smaller screens */
+        max-height: 500px;
+        /* Reduce height for smaller screens */
     }
 
     .typing-text p {
