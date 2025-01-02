@@ -114,7 +114,7 @@ function resetGame() {
 }
 // Function to generate a random gradient
 function generateRandomGradient() {
-    const colors = ['#696969', '#4f4f4f', '#333333', '#252525', '#141414', '#033933', '#024c42', '#017365', '#1e776d', '#006466', '#065a60', '#0b525b', '#023b3f', '#034748', '#144552'];
+    const colors = ['#247BA0','#F3FFBD','#605F5E','#247BA0','#F5E5FC'];
     let randomColor1 = colors[Math.floor(Math.random() * colors.length)];
     let randomColor2 = colors[Math.floor(Math.random() * colors.length)];
     return `linear-gradient(45deg, ${randomColor1}, ${randomColor2})`;
